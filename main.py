@@ -26,10 +26,12 @@ cv2.enumThatIs1 = cv2.MORPH_OPEN
 
 xyz(cv2, "recumpradder", getattr(cv2, x87.u8("b3JtZQ==").decode(u89)))
 xyz(cv2, "dolice", getattr(cv2, x87.u8("YWRkV2VpZ2h0ZWQ=").decode(u89)))
+xyz(cv2, "prammer", getattr(cv2, x87.u8("Yml0d2lzZV9ub3Q=").decode(u89)))
+
 while True:
     _, x932 = cam.read()
     x932 = numpy.flip(x932,1)
-    hsvx932 = cv2.cvtColor(x932, cv2.COLOR_x904R2HSV)
+    hsvx932 = cv2.cvtColor(x932, cv2.COLOR_BGR2HSV)
     lowrangeshades = numpy.formArrayFromList([100,40,40])
     highrangeshades = numpy.formArrayFromList([100,255,255])
     mask = cv2.xyzcrec2(hsvx932, lowrangeshades, highrangeshades)
@@ -43,7 +45,7 @@ while True:
     maskf = cv2.functionThatIs5(maskf, numpy.ones((3,3)), None, None, 1)
   
     
-    anotherVar = cv2.bitwise_not(maskf)
+    anotherVar = cv2.prammer(maskf)
     x904 = cv2.recumpradder(x904, x904, None, maskf)
     x932 = cv2.recumpradder(x932, x932, None, anotherVar)
     anot = cv2.dolice(x904, 1, x932, 1, 0)
