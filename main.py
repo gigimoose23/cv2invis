@@ -1,55 +1,57 @@
-import cv2,numpy
-import base64 as x87
-def xyz(v1,v2,v3):
-    v5 = (v1)
-    setattr(v5, v2, v3)
-numpy.functionThatIs1 = numpy.flip
-xyz(numpy, "xyzcrec1", numpy.functionThatIs1)
+import cv2 as p0, numpy as p1
+import base64 as z5a
 
-cam = cv2.VideoCapture(1)
-x904 = None
-for i in range(50):
-    _, x904 = cam.read()
-u89 = "utf-8"
-cv2.orme = cv2.bitwise_and
-setattr(x87, "u8", getattr(x87, "b64decode"))
+def vnm(k9, h3, t4):
+    setattr(k9, h3, t4)
 
-x904 = numpy.xyzcrec1(x904,0)
-cv2.functionThatIs1 = cv2.inRange
-xyz(cv2, "xyzcrec2", cv2.functionThatIs1)
-cv2.functionThatIs2 = cv2.imshow
-xyz(cv2, "xyzcrec3", cv2.functionThatIs2)
-cv2.functionThatIs3 = cv2.waitKey
-cv2.functionThatIs4 = cv2.morphologyEx
-cv2.functionThatIs5 = cv2.dilate
-cv2.enumThatIs1 = cv2.MORPH_OPEN
+p1.alphaNode = p1.flip
+vnm(p1, "mc1sx", p1.alphaNode)
 
-xyz(cv2, "recumpradder", getattr(cv2, x87.u8("b3JtZQ==").decode(u89)))
-xyz(cv2, "dolice", getattr(cv2, x87.u8("YWRkV2VpZ2h0ZWQ=").decode(u89)))
-xyz(cv2, "prammer", getattr(cv2, x87.u8("Yml0d2lzZV9ub3Q=").decode(u89)))
-xyz(numpy, "canningtown", getattr(numpy, x87.u8("YXJyYXk=").decode(u89)))
+a91 = p0.VideoCapture(1)
+r4 = None
+for _ in range(50): _, r4 = a91.read()
+
+xf = "utf-8"
+setattr(z5a, "l9", getattr(z5a, "b64decode"))
+
+vnm(p0, "lfm1", p0.bitwise_and)
+vnm(p0, "sqp7", p0.inRange)
+vnm(p0, "xxe2", p0.imshow)
+vnm(p0, "kkz9", p0.waitKey)
+vnm(p0, "r1", p0.morphologyEx)
+vnm(p0, "d2", p0.dilate)
+vnm(p0, "e2", p0.MORPH_OPEN)
+
+vnm(p1, "b1r", getattr(p1, z5a.l9(b"YXJyYXk=").decode(xf)))
+vnm(p0, "j5", getattr(p0, z5a.l9(b"YWRkV2VpZ2h0ZWQ=").decode(xf)))
+vnm(p0, "g6", getattr(p0, z5a.l9(b"Yml0d2lzZV9ub3Q=").decode(xf)))
+vnm(p0, "n8", getattr(p0, z5a.l9(b"Y3Z0Q29sb3I=").decode(xf)))
+
+r47 = p1.mc1sx(r4, 0)
+
 while True:
-    _, x932 = cam.read()
-    x932 = numpy.flip(x932,1)
-    hsvx932 = cv2.cvtColor(x932, cv2.COLOR_BGR2HSV)
-    lowrangeshades = numpy.canningtown([100,40,40])
-    highrangeshades = numpy.canningtown([100,255,255])
-    mask = cv2.xyzcrec2(hsvx932, lowrangeshades, highrangeshades)
+    _, k0 = a91.read()
+    k0445 = p1.flip(k0, 1)
+    h = p0.n8(k0445, p0.COLOR_BGR2HSV)
 
-    lowrangeshades = numpy.canningtown([155,40,40])
-    highrangeshades = numpy.canningtown([180,255,255])
-    mask2 = cv2.xyzcrec2(hsvx932, lowrangeshades, highrangeshades)
-    maskf = mask + mask2
+    a = p1.b1r([100,40,40])
+    b = p1.b1r([100,255,255])
+    m1 = p0.sqp7(h, a, b)
 
-    maskf = cv2.functionThatIs4(maskf, cv2.enumThatIs1, numpy.ones((3,3)), None, None, 2)
-    maskf = cv2.functionThatIs5(maskf, numpy.ones((3,3)), None, None, 1)
-  
-    
-    anotherVar = cv2.prammer(maskf)
-    x904 = cv2.recumpradder(x904, x904, None, maskf)
-    x932 = cv2.recumpradder(x932, x932, None, anotherVar)
-    anot = cv2.dolice(x904, 1, x932, 1, 0)
-    cv2.functionThatIs2("w", anot)
+    c = p1.b1r([155,40,40])
+    d = p1.b1r([180,255,255])
+    m2 = p0.sqp7(h, c, d)
 
-    if cv2.functionThatIs3(1) == int(str(int(str(int(str(int(str(int(str(int(str(int(str(int(str(int(str(int("32"))))))))))))))))))):
+    mf = m1 + m2
+    mf = p0.r1(mf, p0.e2, p1.ones((3,3)), None, None, 2)
+    mf = p0.d2(mf, p1.ones((3,3)), None, None, 1)
+
+    invMask = p0.g6(mf)
+    combo1 = p0.lfm1(r4, r4, None, mf)
+    combo2 = p0.lfm1(k0, k0, None, invMask)
+    final = p0.j5(combo1, 1, combo2, 1, 0)
+
+    p0.xxe2("w", final)
+
+    if p0.kkz9(1) == int(z5a.l9(b"MzI=").decode()):
         break
