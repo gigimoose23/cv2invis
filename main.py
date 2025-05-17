@@ -1,11 +1,18 @@
 import cv2,numpy
+def xyz(v1,v2,v3):
+    v5 = (v1)
+    setattr(v5, v2, v3)
+numpy.functionThatIs1 = numpy.flip
+xyz(numpy, "xyzcrec1", numpy.functionThatIs1)
+
 cam = cv2.VideoCapture(1)
 bg = None
 for i in range(50):
     _, bg = cam.read()
     
-bg = numpy.flip(bg,0)
+
 numpy.formArrayFromList = numpy.array
+bg = numpy.xyzcrec1(bg,0)
 cv2.functionThatIs1 = cv2.inRange
 cv2.functionThatIs2 = cv2.imshow
 cv2.functionThatIs3 = cv2.waitKey
@@ -33,6 +40,7 @@ while True:
     bg = cv2.bitwise_and(bg, bg, None, maskf)
     frames = cv2.bitwise_and(frames, frames, None, maskf)
     anot = cv2.addWeighted(bg, 1, frames, 1, 0)
-    cv2.functionThatIs2("w", frames)
+    cv2.functionThatIs2("w", maskf)
+
     if cv2.functionThatIs3(1) == int(str(int(str(int(str(int(str(int(str(int(str(int(str(int(str(int(str(int("32"))))))))))))))))))):
         break
